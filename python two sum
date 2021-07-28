@@ -1,0 +1,9 @@
+class Solution(object):
+    def twoSum(self, nums, target):
+        final = []
+        for i, j in enumerate(nums):
+          for a, b in enumerate(nums):
+            if (b + j == target) & (a != i):
+               final.append(a)
+               final.append(i)
+               return final
